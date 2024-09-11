@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking - BusBooking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">BusBooking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Ticket Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Form -->
+    <div class="container mt-4">
+        <h2>Book Your Ticket</h2>
+        <form>
+            <div class="mb-3">
+                <label for="from" class="form-label">From</label>
+                <input type="text" class="form-control" id="from" placeholder="Enter departure city">
+            </div>
+            <div class="mb-3">
+                <label for="to" class="form-label">To</label>
+                <input type="text" class="form-control" id="to" placeholder="Enter destination city">
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Travel Date</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <div class="mb-3">
+                <label for="passenger" class="form-label">Number of Passengers</label>
+                <input type="number" class="form-control" id="passenger" placeholder="Enter number of passengers">
+            </div>
+            <button type="submit" class="btn btn-primary">Book Ticket</button>
+        </form>
+    </div>
+
+    <!-- Booking Details -->
+    <div class="container mt-4">
+        <h3>Your Booking Details</h3>
+        <p>Details will appear here after booking...</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2024 BusBooking. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
